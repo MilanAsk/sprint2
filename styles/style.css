@@ -1,3 +1,11 @@
+@keyframes square {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .page {
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
@@ -21,6 +29,7 @@ body {
     position: relative;
     margin-bottom: 100px;
     background-color: #F2F2F2;
+    overflow: hidden;
     /* выше установили ограничения для секции */
 }
 
@@ -33,6 +42,8 @@ body {
     right: 0;
     top: 64px;
     z-index: 1;
+    transform: rotate(345deg);
+    animation: square ease-in-out 20s infinite;
     
 }
 
@@ -122,6 +133,94 @@ body {
     font-weight: bold;
     line-height: 34px;
     font-size: 24px;
+}
+.technics {
+   width: 80%; 
+   margin-left: auto;
+   margin-right: auto;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 100px;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cards__item {
+    text-align: center;
+}
+.section-title_tech {
+    margin-top: 100px;
+    width: 60%;
+    margin-bottom: 20px;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    
+}
+.section-subtitle_tech {
+    width: 60%;
+    margin: 0;
+    line-height: 34px;
+    font-size: 24px;
+    font-style: normal;
+}
+.cards__image {
+    width: 160px;
+    height: 160px;
+    margin: 60px 40px 43px 40px;
+    border-radius: 50%;
+    ;
+}
+.cards__title {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.cards__description {
+    line-height: 23px;
+    font-size: 18px;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+.section-title_video {
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 60%;
+
+}
+.section-subtitle_video {
+    line-height: 34px;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 50px;
+    width: 60%;
+}
+.video__iframes  {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    
+}
+.video__iframe {
+    margin: 0 auto;
+    display: inline-block;
+    /* justify-content: center; */
+    width: 515px;
+    height: 316px;
+
 }
 .digits {
     margin-top: 100px;
