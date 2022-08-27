@@ -1,7 +1,7 @@
 
-# Project Sprint1
+# Project Sprint2
 
-My first project
+My second project
 
 The project was made by Askerov Milan
 
